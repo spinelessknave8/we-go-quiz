@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"GO-PROJ/questions"
+	"fmt"
+)
 
 func main() {
 	fmt.Println("This is my quiz game! Let's start playing!")
@@ -18,6 +21,8 @@ func main() {
 		return
 	} else {
 		fmt.Printf("Great! You are old enough to play the game, %v.\n", name)
+		questions.AskQuestions()
+		return
 	}
 
 }
